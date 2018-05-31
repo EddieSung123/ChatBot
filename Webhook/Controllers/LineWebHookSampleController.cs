@@ -30,7 +30,7 @@ namespace Webhook.Controllers
                     if (LineEvent.message.type == "text") //收到文字
                         this.ReplyMessage(LineEvent.replyToken, "你說了:" + LineEvent.message.text);
                     if (LineEvent.message.type == "sticker") //收到貼圖
-                        this.ReplyMessage(LineEvent.replyToken, 1, 2);
+                        this.ReplyMessage(LineEvent.replyToken,1,2);
                     if (LineEvent.message.type == "image") //收到圖片
                         this.ReplyMessage(LineEvent.replyToken, new Uri("https://avatars1.githubusercontent.com/u/26271905?s=460&v=4"));
                 }
